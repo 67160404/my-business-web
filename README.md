@@ -3,6 +3,8 @@
 
 โครงสร้างไฟล์:
 my-business-web/
+├── css
+     └──styles.css
 ├── about.html
 ├── contact.html
 ├── index.html
@@ -16,13 +18,13 @@ my-business-web/
 
 รูปหน้าจอทั้งหมด:
 index.html
-![index.html](images/index.png)
+![index.html](images/css%20index.png)
 about.html
-![about.html](images/about.png)
+![about.html](images/css%20about.png)
 contact.html
-![contact.html](images/contact.png)
+![contact.html](images/css%20contact.png)
 services.html
-![services.html](images/sevices.png)
+![services.html](images/css%20services.png)
 
 <ul>
   <li><a href="index.html">หน้าแรก</a></li>
