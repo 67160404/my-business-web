@@ -1,78 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PC Shop</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!--Header-->
-    <header><h1>PC Shop</h1></header>
-    <figure>
-      <img src="images/logo.png" alt="PC Shop" width="500" />
-      <figcaption>PC Shop</figcaption>
-      <!--Navigation menu-->
-    </figure>
-    <ul>
-      <li><a href="index.html">หน้าแรก</a></li>
-      <li><a href="about.html">เกี่ยวกับ</a></li>
-      <li><a href="services.html">บริการ</a></li>
-      <li><a href="contact.html">ติดต่อ</a></li>
-    </ul>
-        <!--Contact Form-->
-    <header><h3>Contact Form</h3></header>
-    <form class="Contact-Form" action="" method="post"></form>
-    <fieldset style="width: 500px; height: 270px;"> 
-        <legend>ข้อมูลส่วนตัว</legend>
-        <label for="fname">ชื่อจริง:</label>
-        <input type="text" id="fname" name="firstname" required />
-        <label for="lname">นามสกุล:</label>
-        <input type="text" id="lname" name="lastname" required /><br />
-        <label for="email">อีเมล:</label>
-        <input type="email" id="email" name="email" required />
-        <label for="born">วันเกิด:</label>
-        <input type="date" id="born_id" name="born" required />
+    <header id="header">
+      <div class="header-left">
+        <h1>PC Shop</h1>
+        <img
+          src="images/logo.png"
+          alt="PC Shop Logo"
+          class="logo"
+        />
+        </div>
+      </header>
+    <!--Navigation menu-->
+    <nav>
+      <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="about.html">เกี่ยวกับ</a></li>
+        <li><a href="services.html">บริการ</a></li>
+        <li><a href="contact.html">ติดต่อ</a></li>
+      </ul>
+    </nav>
+    <main class="container">
+    <!--Contact Form-->
+    <section class="card section">
+      <h1 class="title">Contact Us</h1>
+      <p>กรุณากรอกข้อมูลเพื่อติดต่อ Shopee</p>
+    </section>
 
-                <fieldset>
-          <legend>เพศ</legend>
-          <input type="radio" id="male" name="gender" />
-          <label for="male">ชาย</label>
-          <input type="radio" id="female" name="gender" />
-          <label for="female">หญิง</label>
-          <input type="radio" id="other" name="gender" />
-          <label for="other">อื่นๆ</label>
+    <!-- Contact Form -->
+    <section class="card section">
+      <form class="contact-form">
+
+        <fieldset>
+          <legend>ข้อมูลส่วนตัว</legend>
+
+          <label>ชื่อจริง</label>
+          <input type="text" required />
+
+          <label>นามสกุล</label>
+          <input type="text" required />
+
+          <label>อีเมล</label>
+          <input type="email" required />
+
+          <label>วันเกิด</label>
+          <input type="date" required />
         </fieldset>
 
-        <label for="country">ประเทศ:</label>
-        <select name="CT" id="country">
-          <option value="">--เลือกประเทศ--</option></select
-        ><br />
+        <fieldset>
+          <legend>เพศ</legend>
+          <label><input type="radio" name="gender" /> ชาย</label>
+          <label><input type="radio" name="gender" /> หญิง</label>
+          <label><input type="radio" name="gender" /> อื่นๆ</label>
+        </fieldset>
 
-        <label for="information">ข้อมูลเพิ่มเติม:</label><br />
-        <textarea
-          name="information"
-          id="info"
-          style="width: 400px; height: 80px"
-        ></textarea
-        ><br />
+        <label>ประเทศ</label>
+        <select>
+          <option>-- เลือกประเทศ --</option>
+          <option>Thailand</option>
+          <option>Japan</option>
+          <option>Korea</option>
+        </select>
 
-        <input type="checkbox" id="accept" name="ยอมรับ" />
-        <label for="accept">ฉันยอมรับเงื่อนไขการใช้บริการ</label>
-      </fieldset>
-      <button type="submit">ส่งข้อมูล</button>
-      <button type="reset">ยกเลิก</button>
+        <label>ข้อมูลเพิ่มเติม</label>
+        <textarea rows="4"></textarea>
+
+        <fieldset>
+          <input type="checkbox" required />
+          ฉันยอมรับเงื่อนไขการใช้บริการ
+        <div>
+          <button class="btn" type="submit">ส่งข้อมูล</button>
+          <button class="btn" type="reset">ยกเลิก</button>
+        </div>
+        </fieldset>
+      </form>
+    </section>
     <p><h3>Google map</h3></p>
         <img src="images/lacation.png" alt="Google map" width="500px">
         <p>Address: 288/65 Poomjainivate 5 Theparak Bangphriang, Bangbo, Samutprakan, Thailand 10560</p>
         <!--Contact in other Platform-->
-    <a href="https://pccomputer.shop/contact/"><img src="images/logo.png" alt="Logo" width="100px"></a >
+        <a href="https://pccomputer.shop/contact/"><img src="images/logo.png" alt="Logo" width="50px"></a >
     <figcaption>Contact Website</figcaption>
-    <ul>
-      <li><a href="index.html">หน้าแรก</a></li>
-      <li><a href="about.html">เกี่ยวกับ</a></li>
-      <li><a href="services.html">บริการ</a></li>
-      <li><a href="contact.html">ติดต่อ</a></li>
-    </ul>
-    <footer>© 2025 PC Shop. All Rights Reserved</footer>
-</body>
+    </main>
+    <footer id="footer">© 2025 PC Shop. All Rights Reserved</footer>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </body>
 </html>
